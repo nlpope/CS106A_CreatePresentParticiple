@@ -9,7 +9,7 @@
  */
 
 import acm.program.*;
-import com.popesoftware.test.*;
+import com.popesoftware.util.*;
 
 public class CS106A_CreatePresentParticiple extends ConsoleProgram
 {
