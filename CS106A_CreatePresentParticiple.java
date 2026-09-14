@@ -19,7 +19,7 @@ public class CS106A_CreatePresentParticiple extends ConsoleProgram
 	{
 		while (true){
 			String userInput = readLine("enter word:");
-			if (userInput == SENTINEL){ println("bye"); return; }
+			if (userInput.equals(SENTINEL)){ println("bye"); break; }
 			println(PSGerund.createPresentParticiple(userInput));
 		}
 	}

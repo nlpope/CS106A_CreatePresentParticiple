@@ -40,10 +40,12 @@ public class PSGerund
 	{
 		for (Character vCase : vowelPrecedentCases){
 			if (secondToLastLetter.equals(vCase)){
-				return word.substring(0, word.length()-1) + "ing";
+				//keep e
+				return word.substring(0, word.length()) + "ing";
 			} 
 		}
-		return word.substring(0, word.length()-2) + "ing";
+		//remove e
+		return word.substring(0, word.length()-1) + "ing";
 	}
 	
 	
@@ -51,7 +53,7 @@ public class PSGerund
 	{
 		for (Character vCase : vowelPrecedentCases){
 			if (secondToLastLetter.equals(vCase)){
-				return word.substring(0, word.length()-1) 
+				return word.substring(0, word.length()) 
 				+ word.charAt(word.length()-1) 
 				+ "ing";
 			} 
